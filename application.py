@@ -7,5 +7,5 @@ def hello_world():
     return 'Hello World'
 
 @application.route("/hello")
-def hello_world():
+def hello_world_2():
     return 'Hello this is my second link'
