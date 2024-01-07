@@ -1,16 +1,678 @@
-{% extends 'base.html' %} 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Moises Flores | Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-{% block title %}
-{{ super() }}
-Bienvenido 
-{% endblock %}
+    <link rel="stylesheet" href="static/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="static/css/aos.css">
+
+    <link rel="stylesheet" href="static/css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="static/css/flaticon.css">
+    <link rel="stylesheet" href="static/css/icomoon.css">
+    <link rel="stylesheet" href="static/css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span>M</span>oy Projects</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>ShowCase</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<span class="subheading">Hey! I am</span>
+		  				<h1>Moises Flores</h1>
+			  				<h2>I'm a 
+								  <span
+								     class="txt-rotate"
+								     data-period="2000"
+								     data-rotate='[ "Data Engineer.", "Data Analyst.", "Financial Engineer.", "Developer." ]'></span>
+								</h2>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mouse">
+				<a href="#" class="mouse-icon">
+					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+				</a>
+			</div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex no-gutters">
+    			<div class="col-md-6 col-lg-6 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(static/images/about.jpg);">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">About</h1>
+		            <h2 class="mb-4">About Me</h2>
+		            <p>Motivated professional adept at applying data
+					engineering and analytics expertise to innovate
+					within data operations. My background
+					seamlessly blends software development, data
+					engineering, and financial acumen, enriched by a
+					robust educational foundation and hands-on
+					experience from various roles and personal
+					projects </p>
+		            <ul class="about-info mt-4 px-md-0 px-2">
+		            	<li class="d-flex"><span>Name:</span> <span>Moises Flores Ortiz</span></li>
+		            	<li class="d-flex"><span>Date of birth:</span> <span>October 17, 1999</span></li>
+		            	<li class="d-flex"><span>City:</span> <span>Guadalajara</span></li>
+		            	<li class="d-flex"><span>Email:</span> <span>floresmoisesortiz@gmail.com</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>+52-33-14-57-25-41</span></li>
+		            </ul>
+		          </div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+                <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+              </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-3">
+				    <nav id="navi">
+					    <ul>
+					      <li><a href="#page-1">Education</a></li>
+					      <li><a href="#page-2">Experience</a></li>
+					      <li><a href="#page-3">Skills</a></li>
+					      <li><a href="#page-4">Certifications</a></li>
+					    </ul>
+					  </nav>
+					</div>
+					<div class="col-md-9">
+					  <div id="page-1" class= "page one">
+					  	<h2 class="heading">Education</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">01/2024 - Present</span>
+		    					<h2>Master of Applied Artificial Intelligence</h2>
+		    					<span class="position">ITESM Instituto Tecnologico y de Estudios Superiores de Monterrey</span>
+								<p>Ready to dive into the world of AI and drive innovation</p>
+	    					</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">08/2018 - 12/2022</span>
+		    					<h2>Bachelor of Financial Engineering</h2>
+		    					<span class="position">ITESO Instituto Tecnologico y de Estudios Superiores de Occidente</span>
+								<p>Outstanding student: 9.80 final grade </p>
+		    				</div>
+	    				</div>
+	    				
+					  </div>
+
+					  <div id="page-2" class= "page two">
+					  	<h2 class="heading">Experience</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">05/2023 - Present</span>
+		    					<h2>Treasury Analytics Developer</h2>
+		    					<span class="position">HP Inc.</span>
+		    					<p>Designed and implemented pipelines to streamline global cash analytics
+									processes, leveraging Azure, Python, and Microsoft Apps for efficient ETL
+									workflows. Successfully automated tasks, reducing manual workload
+									and enhancing overall operational efficiency.</p>
+								<p>Leveraged web scraping within SAP and implemented data
+									transformation techniques to optimize global treasury payment
+									processes, enhancing efficiency and accuracy.
+									</p>
+								<p>Developed and executed scripts to reconcile a high volume of FX
+									transactions between SAP and bank portals, optimizing accuracy and
+									efficiency in financial transaction management.
+									</p>
+								<p>Researched and deployed AI technologies to automate manual tasks,
+									including the implementation of pytesseract for extracting and
+									processing data from Bloomberg terminals.
+									</p>
+								<span class="position">Relevant Achivements</span>
+								<p>Improved accuracy in reconciling 1,500+ monthly FX transactions
+									between SAP and bank portals, enhancing financial efficiency.									
+								</p>
+								<p>
+									Implemented cloud solutions and AI technologies for organizational advancement.
+								</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">03/2021 - 05/2023</span>
+		    					<h2>Finance Data Engineer Jr</h2>
+		    					<span class="position">HP Inc.</span>
+		    					<p>Led the development and maintenance of financial process automation
+									via data pipelines (ETLs) saving hundreds of workload hours.</p>
+								<p>Develop Azure cloud computing solutions for financial data flows</p>
+								<p>Create, improve, and maintain dashboards for decision-makers</p>
+								<span class="position">Relevant Achivements</span>
+								<p>Successfully cut HP Finance Supply Chain manual workload by
+									500+ hours annually, realizing substantial time savings.
+									</p>
+		    				</div>
+	    				</div>
+	    				
+	    				
+					  <div id="page-3" class= "page three">
+					  	<h2 class="heading">Skills</h2>
+					  	<div class="row progress-circle mb-5">
+					  		<div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">Python</h2>
+
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='80'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
+						      </div>
+						    </div>
+
+						    <div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">SQL</h2>
+
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='70'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
+						      </div>
+						    </div>
+
+						    <div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">Azure & AWS</h2>
+
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='70'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
+						      </div>
+						    </div>
+					  	</div>
+						  <h3 class="heading">Programming and DB Development</h3>
+					  	<div class="row">
+					  		<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>APIs</h3>
+									</div>
+							</div>
+							<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>OOP</h3>
+									</div>
+							</div>
+
+							<div class="col-md-6 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3>NoSQL</h3>
+								</div>
+							</div>
+
+							<div class="col-md-6 animate-box">
+								
+									<div class="progress-wrap ftco-animate">
+										<h3>Github</h3>
+									</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								
+									<div class="progress-wrap ftco-animate">
+										<h3>Web Development</h3>
+									</div>
+							</div>
+					  	</div>
+						<h3 class="heading">Cloud Computing: Azure & AWS</h3>
+						<div class="row">
+					  		<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>AppService/Functions</h3>
+									</div>
+							</div>
+							<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Synapse Analytics</h3>
+									</div>
+							</div>
+
+							<div class="col-md-6 animate-box">
+								
+									<div class="progress-wrap ftco-animate">
+										<h3>Data Factory</h3>
+									</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								
+									<div class="progress-wrap ftco-animate">
+										<h3> Data Lake Gen2</h3>
+									</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								
+								<div class="progress-wrap ftco-animate">
+									<h3> Databricks </h3>
+							   </div>
+
+							</div>
+
+							<div class="col-md-6 animate-box">
+								
+								<div class="progress-wrap ftco-animate">
+									<h3>  EC2 </h3>
+							   </div>
+
+							</div>
+
+							<div class="col-md-6 animate-box">
+								
+								<div class="progress-wrap ftco-animate">
+									<h3> kDS </h3>
+							   </div>
+
+							</div>
+
+							<div class="col-md-6 animate-box">
+								
+								<div class="progress-wrap ftco-animate">
+									<h3>  kDF </h3>
+							   </div>
+
+							</div>
+
+							<div class="col-md-6 animate-box">
+								
+								<div class="progress-wrap ftco-animate">
+									<h3> DynamoDB </h3>
+							   </div>
+
+							</div>
+
+							<div class="col-md-6 animate-box">
+								
+								<div class="progress-wrap ftco-animate">
+									<h3> Lambda </h3>
+							   </div>
+
+							</div>
+
+							<div class="col-md-6 animate-box">
+								
+								<div class="progress-wrap ftco-animate">
+									<h3> RedShift </h3>
+							   </div>
+
+							</div>
+						</div>	
+						<h3 class="heading">Analitycs Tools & Machine Learning</h3>
+						<div class="row">
+								  <div class="col-md-6 animate-box">
+										<div class="progress-wrap ftco-animate">
+											<h3>Pandas</h3>
+										</div>
+								</div>
+								<div class="col-md-6 animate-box">
+										<div class="progress-wrap ftco-animate">
+											<h3> NumPy</h3>
+										</div>
+								</div>
+	
+								<div class="col-md-6 animate-box">
+									
+										<div class="progress-wrap ftco-animate">
+											<h3>Scikit-Learn</h3>
+										</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									
+										<div class="progress-wrap ftco-animate">
+											<h3>Keras</h3>
+										</div>
+								</div>
+
+								<div class="col-md-6 animate-box">
+									
+									<div class="progress-wrap ftco-animate">
+										<h3> ML Algorithms</h3>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									
+									<div class="progress-wrap ftco-animate">
+										<h3> Power BI</h3>
+									</div>
+								</div>
+						</div>	
+					  </div>
+					  <div id="page-4" class= "page four">
+					    <h2 class="heading">Certifications</h2>
+						<h3 class="heading">Digital Certifications</h3>
+						<div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+								<span class="date">Issued March 2023</span>
+		    					<h2>Microsoft Certified: Azure Fundamentals</h2>
+								<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="be6a4a18-1dea-4610-a660-2d4b5d4a780c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+	    					</div>
+	    				</div>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+								<span class="date">Issued May 2023</span>
+								<h2>Microsoft Certified: Azure Data Fundamentals</h2>
+								<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="be6a4a18-1dea-4610-a660-2d4b5d4a780c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+	    					</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+								<span class="date">Issued March 2023</span>
+		    					<h2>Databricks Lakehouse Fundamentals</h2>
+		    				</div>
+	    				</div>
+						<h3 class="heading">Financial Certifications</h3>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+								<span class="date">Issued March 2023</span>
+								<h2>AMIB Figure III</h2>
+								<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="99fb5994-84c1-41b3-820c-61d0a5440ae8" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+		    				</div>
+	    				</div>
+					  </div>
+					</div>
+			  </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section" id="services-section">
+    	<div class="container-fluid px-md-5">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>I have developed multiple projects for various professional fields</p>
+          </div>
+        </div>
+			<h3 class="heading">Most impactful projects at HP Inc.</h3>
+    		<div class="row">
+					<div class="col-md-6 text-center d-flex ftco-animate">
+						<a href="https://mfo-demo-s3.s3.amazonaws.com/MFO-Portfolio-Data/Unravel.PNG" class="services-1 shadow" target="_blank">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Supply Chain Expense Categorization</h3>
+								<p>Used Azure and Python in ETL for efficient
+									global Supply Chain expense categorization,
+									saving 500+ hours annually.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">FX Netting Day Transaction Reconcilment</h3>
+								<p>Python solution for reconciling SAP and bank
+									portal transactions, ensuring accuracy in every
+									payment. This solution reconciles more than
+									1,500 transactions per month.
+									</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<h3 class="heading">Personal and Academic Projects</h3>
+				<div class="row">
+					<div class="col-md-3 text-center d-flex ftco-animate">
+						<a href="https://mfo-demo-s3.s3.amazonaws.com/MFO-Portfolio-Data/MFOExchangeBot.mp4"  class="services-1 shadow" target="_blank">
+						
+							<span class="icon" href="https://github.com/MoyMFO/MFOexanchangebot">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Bot - Crytp Trading</h3>
+								<p>Python Module to trade Crypto in Bitso.</p>
+								<p>Click to watch the video</p>
+								<p>Visit my project "MFOexanchangebot" in Github</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 text-center d-flex ftco-animate">
+						<a href="https://github.com/MoyMFO/LNM-P/blob/master/PROYECTO_SIMMAT.ipynb" class="services-1 shadow" target="_blank">
+							<span class="icon">
+								<i class="flaticon-innovation"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Neural Network for the stock market</h3>
+								<p>Keras NN to predict the stock market</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 text-center d-flex ftco-animate">
+						<a href="https://github.com/Miriam1999/PROYECTO-CDIN/blob/main/Equipo9_ProyectoEntrega1.ipynb" class="services-1 shadow" target="_blank">
+							<span class="icon">
+								<i class="flaticon-idea"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Shoes Sales DB Analysis</h3>
+								<p>EDA and clustering analisys</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 text-center d-flex ftco-animate">
+						<a href="https://github.com/MoyMFO/MyST_XEMM" class="services-1 shadow" target="_blank">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Cross Exchange Market Maker (XEMM) strategy</h3>
+								<p>A Pyhton implementation and backtest of the Cross Exchange Market Maker (XEMM) strategy, with base condition on Orderbook replication.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<h1 class="big big-2">More about my devs and professional curriculum...</h1>
+    		<div class="row">
+					<div class="col-md-6 text-center d-flex ftco-animate">
+						<a href="https://github.com/MoyMFO" class="services-1 shadow" target=”_blank”>
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">GitHub</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 text-center d-flex ftco-animate">
+						<a href="https://www.linkedin.com/in/moises-flores-6240a5207/" class="services-1 shadow" target=”_blank”>
+							<span class="icon">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">LinkedIn</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section" id="blog-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Cloud Solution ShowCase</h1>
+            <h2 class="mb-4">Cloud ShowCase</h2>
+            <p>Below there are two examples of cloud computing solutions where multiple services from AWS and Azure are used...</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-6 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="single.html" class="block-20" style="background-image: url('static/images/image_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <div class="d-flex align-items-center mb-3 meta">
+	    
+                </div>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="single.html" class="block-20" style="background-image: url('static/images/image_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <div class="d-flex align-items-center mb-3 meta">
+	               
+                </div>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-hireme img" style="background-image: url(static/images/bg_1.jpg)">
+    	<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>I'm <span>Looking</span> for work oportunities</h2>
+						<p>My wish is to develop the future.</p>
+						<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-{% block content %}
-
-{% if username %}
-    <h1>Bienvenido, {{ username | capitalize }}</h1>
-{% endif %}
-
-
-{% endblock %}
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="static/js/popper.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/jquery.easing.1.3.js"></script>
+  <script src="static/js/jquery.waypoints.min.js"></script>
+  <script src="static/js/jquery.stellar.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/jquery.magnific-popup.min.js"></script>
+  <script src="static/js/aos.js"></script>
+  <script src="static/js/jquery.animateNumber.min.js"></script>
+  <script src="static/js/scrollax.min.js"></script>
+  
+  <script src="static/js/main.js"></script>
+    
+  </body>
+</html>
