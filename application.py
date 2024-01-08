@@ -8,3 +8,7 @@ bootstrap = Bootstrap(application)
 def hello_world():
     return render_template('index.html')
 
+@application.route("/aws-azure-solution-showcase")
+def aws_n_azure():
+    return render_template("aws_n_azure.html")
+

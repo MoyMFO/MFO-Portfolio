@@ -103,7 +103,7 @@
 		        </div>
 	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
               <div class="text">
-                <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                <p><a href="https://mfo-demo-s3.s3.amazonaws.com/MFO-Portfolio-Data/Moises+Flores+Ortiz+Resume.pdf" target="_blank" class="btn btn-primary py-3 px-3">Download CV</a></p>
               </div>
 	          </div>
 	        </div>
@@ -601,42 +601,30 @@
         <div class="row d-flex">
           <div class="col-md-6 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('static/images/image_1.jpg');">
+              <a href="{{ url_for('aws_n_azure')}}" target="_blank" class="block-20" style="background-image: url('static/images/Architecture.PNG');">
               </a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <h3 class="heading"><a href="{{ url_for('aws_n_azure')}}" target="_blank">Iot ShowCase Cloud Solution</a></h3>
                 <div class="d-flex align-items-center mb-3 meta">
 	    
                 </div>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p>Iot RaspBerry ShowCase Using Azure and AWS for the monitoring and analysis system</p>
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('static/images/image_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <div class="d-flex align-items-center mb-3 meta">
-	               
-                </div>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ftco-section ftco-hireme img" style="background-image: url(static/images/bg_1.jpg)">
+    <section class="ftco-section ftco-hireme img" style="background-image: url(static/images/bg_1.)">
     	<div class="overlay"></div>
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
 						<h2>I'm <span>Looking</span> for work oportunities</h2>
 						<p>My wish is to develop the future.</p>
-						<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
+						<p class="mb-0"><a href="#about-section" class="btn btn-primary py-3 px-5">Hire me</a></p>
 					</div>
 				</div>
 			</div>
@@ -644,9 +632,9 @@
 
         <div class="row">
           <div class="col-md-12 text-center">
-
+			<p>This web page was developed and deployed by my own using Flask, Python, BootStrap, AWS Elastic Beanstalk, AWS CodePipeline, AWS S3, AWS EC2</p>
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+   				Bootstrap template obtained from <a href="https://colorlib.com" target="_blank">Colorlib</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
